@@ -1,5 +1,5 @@
 
-# 🧪 Hands-On Activity: Testing a Task Manager App
+# 🧪 Hands-On Activity 2: Testing a Task Manager App
 
 🧱 Project: **Task Manager CLI**
 🎯 Goal: Learn how to write unit tests using Jest by testing a simple logic-based JavaScript project.
@@ -30,7 +30,6 @@ In the project folder, run:
 ```bash
 npm install
 ```
-
 ---
 
 ## 🔬 What You’ll Practice
@@ -63,12 +62,11 @@ Go to `taskManager.test.js` and try:
 - ✅ Writing a test that adds multiple tasks
 - ⚠️ Writing a test that attempts to delete a task twice
 - 🧪 Checking the behavior when the task list is empty
-
 ---
 
 ## 💬 Submit (Practice Only)
 
-Create 2 GitHub Issues using this format:
+Practice how to create 2 GitHub Issues using this format:
 
 **Title**: [e.g., "Deleting a task twice throws error"]
 
