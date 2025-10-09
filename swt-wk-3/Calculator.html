@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <div>
+        <button onclick="addNumbers(5, 3)">Add</button>
+        <button onclick="subtractNumbers(5, 3)">Subtract</button>
+    </div>
+    <p id="result"></p>
+
+    <script>
+        // JavaScript code for performing operations
+        function addNumbers(a, b) {
+            const result = a + b;
+            document.getElementById('result').innerText = 'Result: ' + result;
+            return result;
+        }
+
+        function subtractNumbers(a, b) {
+            const result = a - b;
+            document.getElementById('result').innerText = 'Result: ' + result;
+            return result;
+        }
+
+        console.log('Calculator is ready.');
+    </script>
+</body>
+</html>
