@@ -1,4 +1,3 @@
-```markdown
 # 📝 FAQ for Week 3 Lab: Setting Up SonarQube for Static Code Analysis
 
 ## 🎯 General Questions
@@ -172,4 +171,4 @@ In your reflection, consider:
 - [SonarScanner Documentation](https://docs.sonarsource.com/sonarqube/latest/analyzing-source-code/scanners/sonarscanner/)
 - [SonarCloud Documentation](https://docs.sonarcloud.io/)
 - [SonarQube Quality Gates](https://docs.sonarsource.com/sonarqube/latest/user-guide/quality-gates/)
-```
+
