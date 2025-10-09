@@ -1,4 +1,3 @@
-```markdown
 # 🧑‍💻 Week 3 Lab: Setting Up SonarQube for Static Code Analysis
 
 ## 🎯 Learning Objectives
@@ -14,7 +13,7 @@ By the end of this lab, you will be able to:
 
 ## 📋 What You'll Need
 
-- SonarQube installed locally **or** SonarCloud (free-tier) set up
+- SonarQube installed locally **or** SonarCloud (free tier) set up
 - SonarLint extension installed in VS Code (optional)
 - The `Calculator.html` file (download or clone the repository)
 
@@ -30,15 +29,15 @@ By the end of this lab, you will be able to:
 - Follow the [SonarQube installation guide](https://docs.sonarqube.org/latest/setup/install-server/) for your operating system
 - Once installed, open your browser and go to **http://localhost:9000** to access the SonarQube dashboard
 
-**Default login credentials:**
-- **Username:** `admin`
+**Default login credentials:**  
+- **Username:** `admin`  
 - **Password:** `admin`
 
 #### **Option 2: Set Up SonarCloud**
 
-- Go to [SonarCloud](https://sonarcloud.io/) and create an account if you don't have one
-- Link your GitHub repository to SonarCloud (if you don't have one, create a test repository)
-- Once linked, create a new project in SonarCloud. SonarCloud will guide you through setting up the SonarScanner to analyze your code
+- Go to [SonarCloud](https://sonarcloud.io/) and create an account if you don’t have one
+- Link your GitHub repository to SonarCloud (if you don’t have one, create a test repository)
+- Once linked, create a new project in SonarCloud. SonarCloud will guide you through setting up SonarScanner to analyze your code
 
 ---
 
@@ -46,9 +45,9 @@ By the end of this lab, you will be able to:
 
 #### **Create the Project**
 
-- Clone or download the `Calculator.html` file. This file is your JavaScript Calculator that you'll be analyzing
+- Clone or download the `Calculator.html` file. This is your JavaScript calculator that you’ll analyze.
 
-#### **Configure SonarQube for analysis**
+#### **Configure SonarQube for Analysis**
 
 - Create a `sonar-project.properties` file in the project folder and add the following configuration:
 
@@ -68,28 +67,30 @@ sonar.sourceEncoding=UTF-8
 ### 3. Run the SonarQube Analysis
 
 - Install SonarScanner by following the [SonarScanner installation guide](https://docs.sonarqube.org/latest/analysis/scan/sonarscanner/)
-- Open your terminal/command prompt and navigate to the folder where the `Calculator.html` file is located
+- Open your terminal or command prompt and navigate to the folder containing `Calculator.html`
 - Run the following command to start the analysis:
 
 ```bash
 sonar-scanner
 ```
 
-> This will send your project's code to SonarQube for inspection.
+> This sends your project’s code to SonarQube (or SonarCloud) for inspection.
 
 ---
 
 ### 4. Review the Results in SonarQube
 
-- After the analysis completes, open your browser and go to your SonarQube dashboard (**http://localhost:9000** for local, or your SonarCloud project URL)
-- Find the **Calculator Project** and click on it to see the analysis results
+- After the analysis completes, open your browser and go to:
+  - **http://localhost:9000** (for local SonarQube), or
+  - Your SonarCloud project URL
+- Find the **Calculator JS Project** and click on it to view the analysis results
 
-You should see the following insights:
+You should see insights such as:
 
-- **Code Smells**: Suggestions to improve code quality
-- **Bugs**: Functional errors in the code
+- **Code Smells**: Suggestions to improve maintainability
+- **Bugs**: Functional errors that may cause incorrect behavior
 - **Vulnerabilities**: Potential security risks
-- **Test Coverage**: If tests exist, SonarQube will show coverage details
+- **Test Coverage**: (If applicable) metrics on how much code is tested
 
 ---
 
@@ -99,41 +100,38 @@ You should see the following insights:
 
 Review the SonarQube report and identify:
 
-- Are there any code smells or bugs detected?
-- What does SonarQube suggest to improve the code (e.g., refactorings, security fixes)?
+- Are there any code smells, bugs, or vulnerabilities detected?
+- What specific improvements does SonarQube suggest (e.g., refactoring, security fixes)?
 
 #### **Personal reflection on the Process**
 
-- How did SonarQube help you find issues that might have been missed during a manual code review?
-- What did you learn from the SonarQube analysis?
-- Do you agree with SonarQube's suggestions? Why or why not?
+- How did SonarQube help uncover issues you might have missed during manual review?
+- What did you learn from the automated analysis?
+- Do you agree with SonarQube’s findings? Why or why not?
 
 ---
 
 ## 📝 What You Need to Practice
 
-- **SonarQube Setup**: Submit a screenshot of your SonarQube dashboard showing the analysis of your **Calculator JS Project**
-- **SonarQube Report**: Submit a summary of the issues detected by SonarQube, including:
-  - At least **3 issues** detected (e.g., bugs, code smells, security vulnerabilities)
-  - **Reflection** on SonarQube's findings: Were there any issues SonarQube found that you missed during the manual review?
-- **Reflection**: Submit a brief reflection on your experience:
+- **Screenshot**: A screenshot of your SonarQube or SonarCloud dashboard showing the analysis of your **Calculator JS Project**
+- **Issue Summary**: A brief summary of **at least 3 issues** detected (e.g., bugs, code smells, security vulnerabilities)
+- **Reflection**: Answer the following:
   - What did you find useful about using SonarQube?
-  - How does SonarQube help with static testing compared to manual review?
+  - How does automated static analysis compare to manual code review in terms of efficiency and depth?
 
 ---
 
 ## 🧑‍💻 Further Learning
 
-To get deeper into SonarQube:
+To go deeper with SonarQube:
 
-- Explore **SonarQube Quality Gates** (to ensure code quality before merging)
-- Learn about **custom rules and configuration** in SonarQube to tailor it to your project
-- Integrate SonarQube with **CI/CD pipelines** for automated analysis during every code push
+- Explore **[Quality Gates](https://docs.sonarqube.org/latest/user-guide/quality-gates/)** to enforce code standards before merging
+- Learn how to create **custom rules** and quality profiles
+- Integrate SonarQube into **CI/CD pipelines** (e.g., GitHub Actions, GitLab CI) for automated analysis on every push
 
 ### 🔗 Additional Resources
 
 - [SonarQube Documentation](https://docs.sonarqube.org/)
 - [SonarScanner Documentation](https://docs.sonarqube.org/latest/analysis/scan/sonarscanner/)
 - [SonarCloud Documentation](https://docs.sonarcloud.io/)
-- [SonarQube Quality Gates](https://docs.sonarqube.org/latest/user-guide/quality-gates/)
-```
+- [Understanding Quality Gates](https://docs.sonarqube.org/latest/user-guide/quality-gates/)
